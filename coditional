@@ -1,0 +1,25 @@
+Write a program to print absolute vlaue of a number entered by user. E.g.-
+INPUT: 1        OUTPUT: 1
+INPUT: -1        OUTPUT: 1
+
+ans -
+import java.util.Scanner;
+public class Solution{
+    public static void main(String[] args){
+        int a;
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter no.:");
+        a= obj.nextInt();
+        
+        if (a<0){
+        System.out.print("Absolute value:"+" "+(-1*a));
+        
+        
+    }
+    else{
+        System.out.println("Absolute value:"+" "+a);
+        
+    }
+    
+    }
+}
