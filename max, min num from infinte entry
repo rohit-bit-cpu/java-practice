@@ -1,0 +1,35 @@
+Write a program to enter the numbers till the user wants and at the end the program should display the largest and smallest numbers entered.
+
+import java.util.Scanner;
+
+public class Count {
+    public static void main(String[] args){
+        int num;
+        int min = Integer.MAX_VALUE;           // it intialize minimum with maximum value
+        int max = Integer.MIN_VALUE;          // it intialize maximum with minimum value
+        
+        char choice ;
+        Scanner obj = new Scanner(System.in);
+        
+        do{
+            System.out.println("Enter number");
+            num = obj.nextInt();
+            
+            if (num> max)
+            {
+                max = num;
+            }
+            if(num<min)
+            {
+               min = num;
+            }
+           
+            System.out.println("Do you want to continue ??");
+            choice= obj.next().charAt(0);
+            
+        }while (choice == 'y'|| choice=='Y');
+        System.out.println("maximum no.: "+" "+ max);
+        System.out.println("minimum no.:"+" "+ min);
+        
+    }
+}
