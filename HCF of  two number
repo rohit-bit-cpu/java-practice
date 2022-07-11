@@ -1,0 +1,28 @@
+To calculate HCF of two number.
+
+import java.util.Scanner;
+
+public class HCF {
+    public static void main(String[] args){
+        int rem ,divi,divs ;
+        int hcf =0;
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter dividend:");
+        divi = obj.nextInt(); 
+         System.out.println("Enter divisor");
+         divs = obj.nextInt();
+        
+        do {
+            rem = divi % divs ;
+            if (rem == 0){
+                hcf = divs;
+            }
+            else{
+                divi = divs;
+                divs = rem;
+            }
+        }
+        while (rem != 0 );
+        System.out.println("hcf is :"+" "+ hcf);
+    }
+}
