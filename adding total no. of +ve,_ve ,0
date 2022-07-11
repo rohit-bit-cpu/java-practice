@@ -1,0 +1,38 @@
+Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered. 
+
+import java.util.Scanner;
+
+public class Count {
+    public static void main(String[] args){
+        int num;
+        int countPositive = 0;
+        int countNegative = 0;
+        int countZero = 0;
+        
+        char choice ;
+        Scanner obj = new Scanner(System.in);
+        
+        do{
+            System.out.println("Enter number");
+            num = obj.nextInt();
+            
+            if (num > 0)
+            {
+                countPositive++ ;
+            }
+            else if( num<0)
+            {
+                countNegative++ ;
+            }
+            else {
+                countZero++ ;
+            }
+            System.out.println("Do you want to continue ??");
+            choice= obj.next().charAt(0);
+            
+        }while (choice == 'y'|| choice=='Y');
+        System.out.println("total no. of postive value:"+" "+ countPositive);
+        System.out.println("total no. of negative value:"+" "+ countNegative);
+        System.out.println("total no. of zero :"+" "+ countZero);
+    }
+}
