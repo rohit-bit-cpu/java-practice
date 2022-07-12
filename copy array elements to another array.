@@ -1,0 +1,43 @@
+// for copy both array should be off same size and same datatype
+
+import java.util.Scanner;
+class A{
+    public static void main(String[] args){
+        
+        int b[] = new int[5];
+        int a[]=new int[5];
+        System.out.println("Enter First array elements: ");
+        Scanner obj = new Scanner(System.in);
+       for (int i = 0;i<5;i++){
+           a[i] = obj.nextInt();
+       }
+       System.out.println("First Array elements: ");
+       for (int i=0;i<5;i++){
+           System.out.println(a[i]+" ");
+       }
+       System.out.println("second Array elements: ");
+       for (int i=0;i<5;i++)
+       {
+           b[i]=a[i];
+           System.out.println(b[i]+" ");
+       }
+    }
+}
+
+
+output :-
+
+Enter array elements: 
+53 82 53 54 52
+First Array elements: 
+53 
+82 
+53 
+54 
+52 
+second Array elements: 
+53 
+82 
+53 
+54 
+52 
