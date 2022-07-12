@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class A{
+    public static void main(String[] args){
+        int sum=0;
+        int a[]= new int[5];
+        System.out.println("Enter elements in array:");
+        Scanner obj = new Scanner(System.in);
+        
+        for(int i= 0;i<5; i++){
+            a[i]=obj.nextInt();    
+        }
+        System.out.println("Array elements are:");
+        for(int i = 0;i<5;i++){
+            System.out.print(a[i]+" ");
+            sum = a[i]+sum;
+        }
+        System.out.println("Addition: "+sum);
+    }
+}
+
+
+// dry run (to understand logic)
+
+a[0]=10;
+a[1]=20;
+a[2]=30;
+a[3]=40;
+a[4]=50;
+
+in second for loop - sum = sum+a[i]
+
+step1- 0+a[0] =10
+step2- 10+a[1] =30
+step3- 30+a[2]=60
+step4-60+a[3]=100
+step5- 100+a[4]=150
+
+net sum = 150;
