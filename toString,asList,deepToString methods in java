@@ -1,0 +1,21 @@
+import java.util.Arrays;
+class A {
+    public static void main(String[] args){
+        
+       String a[]={"Rohit","Himanshu","Rekha","Sanjay"};
+       System.out.println("toString "+Arrays.toString(a));        //1d array
+       System.out.println("asList "+Arrays.asList(a));            //1d array
+       
+       int arr[][] ={{12,34},{50,61}};
+       System.out.println("deepToString "+Arrays.deepToString(arr));   // only for 2d array
+       
+    }
+}
+
+
+output  --      
+    toString [Rohit, Himanshu, Rekha, Sanjay]
+    
+    asList [Rohit, Himanshu, Rekha, Sanjay]
+    
+    deepToString [[12, 34], [50, 61]]
