@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class A{
+    public static void main(String[] args){
+       int temp;
+        int a[]= new int[5];
+        System.out.println("Enter elements in array:");
+        Scanner obj = new Scanner(System.in);  // to input value in run time we use scanner class.
+        
+        for(int i= 0;i<a.length; i++){
+            a[i]=obj.nextInt();    
+        }
+       
+        for (int i=0;i<5;i++){
+            for (int j=i+1;j<5;j++){
+                if (a[i]<a[j])
+                {
+                    // swapping logic
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+         System.out.println("array sorted in desceending order:");
+        for(int i = 0;i<5;i++){
+            System.out.println(a[i]+" ");
+        }
+         
+    }
+}
