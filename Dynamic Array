@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Demo{
+    public static void main(String[] args){
+        
+        int size , i;
+        Scanner obj= new Scanner(System.in);
+        System.out.println("Enter size of array:"+" ");
+        size = obj.nextInt();                          //take input for array size.
+        int a[] = new int[size];
+        for (i =0;i<size;i++){
+           // System.out.println("Enter the ineices value:"+" ");
+           a[i] = obj.nextInt();                      // take input for array index.like a[0],a[1],a[2].......so on. till (size-1)
+        }
+        System.out.println("Array values are:"+" ");
+        for (i =0;i<size;i++)
+        {
+            System.out.println(a[i]+" ");            // this will mainly print the array value.
+        }
+    }
+}
