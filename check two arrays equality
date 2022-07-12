@@ -1,0 +1,23 @@
+class A{
+    public static void main(String[] args){
+       int temp;
+        int a[]= new int[5];
+        int a1[]= new int[5];
+        System.out.println("Enter data in array:");
+        Scanner obj = new Scanner(System.in);  // to input value in run time we use scanner class.
+        
+        for(int i= 0;i<a.length; i++){
+            a[i]=obj.nextInt();    
+        }
+      
+        System.out.println("Enter data in array2 : ");
+        for(int i = 0;i<a1.length;i++){
+            a1[i]=obj.nextInt();
+        }
+        boolean b= Arrays.equals(a,a1);
+        System.out.println("are bothe array equal ??"+b);
+         
+    }
+}
+
+if size of two arrays are differnt it will return false.
