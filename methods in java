@@ -1,0 +1,17 @@
+***Methods - methods are block of code which take input from user process it and give output.
+
+****There are two types of methods - i) predefined   ii) userdefined
+
+
+
+class A{
+    public static void main(String[] args){
+        
+        A r = new A();    // creation of object without object non static method will not make any call.
+        r.Print();        // it is the way of to call the object.
+    }
+    void Print()
+    {
+        System.out.println("Hello Rohit");
+    }
+}
