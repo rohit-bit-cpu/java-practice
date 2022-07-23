@@ -1,0 +1,22 @@
+class A
+{
+int a=20;
+static int b=72;
+
+public static void main(String[] args){
+       A r = new A();               // object making of class A.
+       r.disp();
+       r.print();
+}
+static void print()                  // print is static method so it only call static variable.
+{
+System.out.println("print()"+" "+b);
+}
+void disp()                          // here disp is non static method it can call both non-static and static variable .
+{
+System.out.println("disp"+" "+a+" "+b);
+}
+}
+
+
+// in non static method case if we want to call a method then we must have to create a object of same class name . 
